@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+.btn{
+    width: 120px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+.special-task{
+    background-color: rgb(255, 255, 149);
+}
