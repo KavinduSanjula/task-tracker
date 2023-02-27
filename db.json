@@ -3,22 +3,27 @@
     {
       "id": "1",
       "text": "Make task tracker app",
-      "special": true
+      "special": false
     },
     {
       "id": "2",
-      "text": "Connect with firebase",
-      "special": true
+      "text": "Connect with json server",
+      "special": false
     },
     {
       "id": "3",
-      "text": "Connect with json server",
-      "special": true
+      "text": "Connect with firebase",
+      "special": false
     },
     {
-      "id": "4",
-      "text": "Learn mysql",
-      "special": false
+      "text": "Hello World",
+      "special": false,
+      "id": "zc097CG"
+    },
+    {
+      "text": "Important",
+      "special": true,
+      "id": "xwtGaI-"
     }
   ]
 }

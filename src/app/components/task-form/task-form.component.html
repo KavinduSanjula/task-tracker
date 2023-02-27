@@ -1,13 +1,13 @@
 <div *ngIf="formState" class="task-form">
 
-    <form>
+    <form (ngSubmit)="onSubmit()">
         <div class="form-control">
             <label for="title">Title:</label>
-            <input type="text" name="title" id="title">
+            <input type="text" name="title" [(ngModel)]="text" id="title">
         </div>
         <div class="form-control form-check">
             <label for="special">Is special:</label>
-            <input type="checkbox" name="special" id="special">
+            <input type="checkbox" name="special" [(ngModel)]="special" id="special">
         </div>
         <div class="form-control">
             <input class="btn" type="submit" value="Add">

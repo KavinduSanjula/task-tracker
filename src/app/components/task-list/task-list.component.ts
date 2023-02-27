@@ -16,9 +16,26 @@ export class TaskListComponent {
     this.taskService.getTasks().subscribe(list => this.tasks = list);
   }
 
+  onAddTask(task : Task) : void {
+    this.taskService.addTask(task).subscribe(()=>this.tasks.push(task));
+    
+  }
+
   onTaskDelete(task : Task) : void {
     this.taskService.deleteTask(task).subscribe(()=>{
       this.tasks = this.tasks.filter(item => item.id !== task.id);
+    });
+  }
+
+  onTaskUpdate(task : Task)  : void {
+    task.special = !task.special;
+    this.taskService.updateTask(task).subscribe(()=>{
+      this.tasks.forEach(t => {
+        if (t.id === task.id)
+        {
+          t.special = task.special;
+        }
+      })
     });
   }
 }
