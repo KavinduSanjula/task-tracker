@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-task-form',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class TaskFormComponent {
 
+  formState : boolean = false;
+  subscription : Subscription;
+
+  constructor(private uiService : UiService){
+    this.subscription = uiService.onFormToggle().subscribe(value => this.formState = value);
+  }
 }
