@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Make task tracker app",
+      "special": true
+    },
+    {
+      "id": "2",
+      "text": "Connect with firebase",
+      "special": true
+    },
+    {
+      "id": "3",
+      "text": "Connect with json server",
+      "special": true
+    },
+    {
+      "id": "4",
+      "text": "Learn mysql",
+      "special": false
+    }
+  ]
+}

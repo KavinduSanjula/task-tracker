@@ -1,6 +1,6 @@
-<div class="task-item">
-    <p>Task item text</p>
-    <div class="close-btn">
+<div [ngClass]="{'special-task':special}" class="task-item">
+    <p>{{text}}</p>
+    <div class="close-btn" (click)="onDeleteClicked()">
         X
     </div>
 </div>

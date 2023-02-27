@@ -1,5 +1,7 @@
 <div class="task-list">
-    <app-task-item></app-task-item>
-    <app-task-item></app-task-item>
-    <app-task-item></app-task-item>
+    <app-task-item *ngFor="let task of tasks" 
+    [text]="task.text" 
+    [special]="task.special"
+    (onDelete)="onTaskDelete(task)"
+    ></app-task-item>
 </div>
